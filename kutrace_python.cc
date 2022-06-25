@@ -7,10 +7,6 @@
 #include <Python.h>
 #include "kutrace_lib/kutrace_lib.h"
 
-// TODO (next): Delete almost this entire file and wrap all of the functions
-// provided by kutrace_lib.h. Don't forget to add the kutrace source during
-// compilation.
-
 static PyObject* TestKUTrace(PyObject *self, PyObject *args) {
   bool ok = kutrace::test();
   if (ok) {
